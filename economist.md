@@ -9,8 +9,7 @@ This folder documents the **theoretical analysis** of the bargaining game.
 We study the **simultaneous-demand bargaining game** with $n$ players:
 
 - Strategy set for each player $i$:  
-  \[
-  S_i = [0,100]
+  \[S_i = [0,100]
   \]
 
 - If player $i$ chooses demand $d_i \in S_i$, the profile is $d = (d_1, \dots, d_n)$ with total  
