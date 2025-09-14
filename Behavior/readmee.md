@@ -25,10 +25,21 @@ Players: 2
 Each chooses demand $d_i \in [0,100]$
 
 Payoff rule:
-def payoff(demands):
-    total = sum(demands)
-    if total <= 100:
-        return demands
-    else:
-        return [0 for _ in demands]
+- Players: `n` (we analyze `n = 2` and `n ≥ 3`)
+- Payoffs:
+  - If `S ≤ 100`: `every one gets what they ask for`
+  - If `S > 100`: `every one gets 0 payoff`
 
+**Intuition.** Everyone demands a share from a fixed pie of size 100. If the group stays within budget, each gets exactly what they asked for; otherwise, everyone gets 0.
+
+### Ethics Note
+
+The experiment was conducted in a classroom setting with classmates.
+
+Participation was voluntary and anonymous.
+
+No monetary incentives were used; payoffs were points only.
+
+LLM sessions (ChatGPT-5, Qwen, Yi) complied with providers’ terms of service.
+
+Data shared in this repo contains no personal information.
