@@ -64,5 +64,57 @@ We also analyze the Rubinstein-style alternating-offers model (perfect informati
 
 - Players alternate proposals; responders accept/reject.
 - **Subgame Perfect Nash Equilibrium (SPNE):** Immediate agreement on an efficient division under standard assumptions (A1–A4 in Osborne & Rubinstein, Ch. 7).
-- With geometric discounts `δ_1, δ_2 ∈ (0,1)`, the proposer’s share is
+- With geometric discounts `δ_1, δ_2 ∈ (0,1)`, the proposer’s share is a* = (1 - δ_2) / (1 - δ_1 δ_2) and the responder gets `1 - a*`.
+
+**Key properties:**
+- Stationary strategies; one-deviation property.
+- First-mover advantage (even with equal patience).
+- Variants (outside options, risk of breakdown, indivisibilities) shift SPNE in predictable ways.
+- With more than two players, uniqueness fails and many SPNE can be supported.
+
+**Citations:**
+- Osborne & Rubinstein (1994), *A Course in Game Theory*, Ch. 7:
+- §7.1–§7.3 (pp. 118–126): model & SPNE characterization (Proposition 122.1)
+- Example 125.1: split-the-pie formula for `a*`
+- §7.3.2 (p. 126): properties (efficiency, first-mover advantage)
+- §7.4.3–§7.4.5 (pp. 127–131): variants and `n > 2`
+
+---
+
+## 5) Welfare & Fairness (Recap)
+
+- **Pareto efficiency:**
+- Simultaneous-demand: efficient iff `Σ_i d_i = 100`
+- Alternating-offers: SPNE is efficient (immediate agreement)
+- **Utilitarian welfare:**
+- 100 at efficient NE, 0 at over-ask NE (for `n ≥ 3`)
+- **Fairness:**
+- Equal split minimizes inequality.
+- First-mover advantage in alternating-offers.
+- Outside options tilt the outcome toward better outside options.
+
+---
+
+## 6) How this maps to the assignment (Part 1)
+
+- **Equilibrium concept**: Defined NE and SPNE; cited existence results (Nash/Glicksberg; O&R Ch. 7).
+- **Analytical solution**: Characterized NE sets for `n=2` and `n≥3`; discussed efficiency/fairness.
+- **Interpretation**: Multiplicity (continuum of NE; over-ask NE for `n≥3`), realism vs. SPNE refinement, bounded rationality and computational tractability pointers.
+
+---
+
+## 7) References (with page/section pointers)
+
+- **Osborne, M. J., & Rubinstein, A. (1994).** *A Course in Game Theory*. MIT Press.  
+- p. 117: simultaneous-demand split-the-pie description  
+- Ch. 7 §7.1–§7.3 (pp. 118–126): alternating-offers model & SPNE (Prop. 122.1)  
+- Example 125.1: proposer share formula  
+- §7.3.2 (p. 126): efficiency, stationarity, first-mover advantage  
+- §7.4.3–§7.4.5 (pp. 127–131): outside options, breakdown risk, `n>2`.
+
+- **Shoham, Y., & Leyton-Brown, K. (2008).** *Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations*. Cambridge University Press.  
+- Ch. 2: normal-form games, NE definitions, existence (incl. Glicksberg).
+
+
+
 
