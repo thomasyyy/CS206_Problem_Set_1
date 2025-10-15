@@ -1,56 +1,118 @@
-# Bargaining Game: An Interdisciplinary Study
+# 🎯 Strategic Bargaining, Auctions, and Mechanism Design with Humans and LLMs
 
-## Abstract
-This repository accompanies **Problem Set 1 (COMSCI/ECON 206: Computational Microeconomics, Autumn 2025)**.  
-The project extends the classic two-player bargaining game to three players, combining theory, computation, and behavioral evidence.  
-It formalizes equilibrium concepts, computes equilibria with tools such as **NashPy** and **Game Theory Explorer**, and deploys an **oTree experiment** tested with both human participants and large language models (LLMs).
-
----
-
-## Task Summary
-- **Economist (theory & welfare):** Formalize the bargaining game, characterize Nash and SPNE equilibria, and analyze efficiency and fairness.  
-- **Computational Scientist (coding & tools):** Construct payoff matrices, compute equilibria via Google Colab & NashPy, and build an extensive form in GTE.  
-- **Behavioral Scientist (experiment & AI comparison):** Deploy oTree, run human sessions, simulate with LLMs, and compare outcomes to theory.  
+> **Abstract**  
+> This project explores how bargaining, auction, and matching outcomes evolve when participants are **humans vs. LLMs**.  
+> It combines **game-theoretic theory**, **computational modeling**, and **behavioral experiments** to study efficiency, fairness, and robustness in strategic environments.  
+> - **Two-player simultaneous-demand bargaining:** all surplus-exhausting allocations are Nash equilibria (efficient but unequal).  
+> - **Three-player and higher:** coordination failures yield inefficient “over-ask” equilibria.  
+> - **Common-value auctions:** LLM agents mix rational and behavioral bidding patterns (winner’s curse, shading).  
+> - **Refugee burden-sharing:** proposes **RCCM**—a two-stage *Robust Condorcet + Credit Matching* mechanism improving fairness, efficiency, and legitimacy.
 
 ---
 
-## Reproduction Steps
-1. **Economist part**  
-   - See `economist/README.md` for definitions, textbook references, and analytical solution notes.
+## 👥 Authors and Roles
 
-2. **Computational Scientist part**  
-   - Open `computational_scientist/notebook.ipynb` in **Google Colab**  
-     or run locally after installing:
-     ```bash
-     pip install nashpy numpy matplotlib
-     ```
-   - For extensive form, open the `.gte` files in **Game Theory Explorer**.  
-   - Screenshots of solver outputs and trees are in `computational_scientist/gte/`.
-
-3. **Behavioral Scientist part**  
-   - Unzip and run `behavioral_scientist/otree_app.zip`.  
-   - Install requirements:
-     ```bash
-     pip3 install -U otree zipserver
-     zipserver your_project.otreezip
-     ```
-   - Screenshots of game pages are in `behavioral_scientist/screenshots/`.  
-   - LLM prompts and transcripts are in `behavioral_scientist/llm/`.  
-
-4. **Paper**  
-   - See `Problem_Set_1.pdf` (compiled LaTeX source) for the write-up including figures and analysis.  
+| Name | Role | Responsibilities |
+|------|------|------------------|
+| **Peilin Wu** | 🎓 Economist | Formal modeling, NE/SPNE derivations, welfare and fairness analysis |
+|  | 💻 Computational Scientist | Matrix construction, NashPy/QuantEcon computation, GTE visualization |
+|  | 🧠 Behavioral Scientist | oTree experiments, human/LLM sessions, data analysis |
+|  | 🏗️ Mechanism Designer | RCCM design (Condorcet → Credit Clearing → Stable Matching) and KPI evaluation |
 
 ---
 
-## Data/Code Availability
-- 📂 GitHub repository: [CS206_Problem_Set_1](https://github.com/thomasyyy/CS206_Problem_Set_1)  
-- 📑 Google Colab notebook: [link](https://colab.research.google.com/drive/1vxD5r5U3DXyJXzuUMp2tLGh2g5DKo3WB)  
+## 🧩 Contribution to SDGs
+
+This project contributes to the **United Nations Sustainable Development Goals**:
+
+| SDG | Goal | Alignment |
+|-----|------|------------|
+| **4** | Quality Education | Reproducible, open-source computational social-science education |
+| **9** | Industry, Innovation & Infrastructure | Responsible LLM integration in experimental economics |
+| **10** | Reduced Inequalities | Quantifying fairness and welfare in allocation mechanisms |
+| **16** | Peace, Justice & Strong Institutions | Designing transparent and legitimate decision mechanisms |
 
 ---
 
-## Software Citations
-- Osborne, M. J., & Rubinstein, A. (1994). *A Course in Game Theory*. MIT Press.  
-- Shoham, Y., & Leyton-Brown, K. (2008). *Multiagent Systems*. Cambridge University Press.  
-- Knight, V. (2021). *NashPy: A Python library for the computation of equilibria of 2-player strategic games*, Version 0.0.28.  
-- Savani, R., & von Stengel, B. (2015). *Game Theory Explorer – Software for the Applied Game Theorist*. Computational Management Science, 12, 5–33.  
-- Sargent, T. J., & Stachurski, J. (2021). *Quantitative Economics (Python)*, Version 0.5.1.  
+## 🙏 Acknowledgments
+
+Grateful to **Prof. Luyao Zhang** and classmates for guidance and feedback.  
+Appreciation to **open-source communities**: [NashPy](https://nashpy.readthedocs.io/), [QuantEcon](https://quantecon.org/), [Game Theory Explorer](https://gtegames.com/), and [oTree](https://www.otree.org/).  
+Thanks also to **responsible AIGC tools** (GPT-5, Qwen3, DeepSeek, Hunyuan) for code organization, drafting, and visualization support.
+
+---
+
+## ⚖️ Disclaimer
+
+> This repository supports the final research proposal submitted to **COMSCI/ECON 206: Computational Microeconomics**, instructed by **Prof. Luyao Zhang** at **Duke Kunshan University** in **Autumn 2025**.
+
+---
+
+## 🌱 Statement of Intellectual and Professional Growth
+
+Through PS1 → PS2 → Final Proposal and field experiences, this project fostered:
+
+- **Research design**: from formal modeling to empirically testable hypotheses.  
+- **Technical mastery**: NE/SPNE computation, oTree deployment, and reproducible workflows.  
+- **Interdisciplinary thinking**: bridging economics, computation, and behavioral data.  
+- **Professional growth**: collaboration, transparent communication, ethical reflection, and responsible AI practice.
+
+---
+
+## 🗂️ Table of Contents
+
+1. [Abstract](#-strategic-bargaining-auctions-and-mechanism-design-with-humans-and-llms)  
+2. [Authors and Roles](#-authors-and-roles)  
+3. [Contribution to SDGs](#-contribution-to-sdgs)  
+4. [Acknowledgments](#-acknowledgments)  
+5. [Disclaimer](#-disclaimer)  
+6. [Statement of Growth](#-statement-of-intellectual-and-professional-growth)  
+7. [Navigation Instructions](#-navigation-instructions)  
+8. [Repository Map](#-repository-map)  
+9. [Embedded Media](#-embedded-media)  
+10. [Reproducibility Guide](#-reproducibility-guide)  
+11. [Citations](#-citations)
+
+---
+
+## 🧭 Navigation Instructions
+
+**Locate core components easily:**
+
+| Category | Folder | Description |
+|-----------|---------|-------------|
+| Equilibria Computation | [`computational_scientist/colab/`](computational_scientist/colab/) | 2P matrices + NashPy runs |
+| Enumeration (3P+) | [`computational_scientist/enumeration/`](computational_scientist/enumeration/) | Over-ask NE checks |
+| Mechanism Design | [`mechanism_design/src/`](mechanism_design/src/) | RCCM: Condorcet → Credit Clearing → Stable Matching |
+| KPI Experiments | [`mechanism_design/experiments/`](mechanism_design/experiments/) | Fairness, Efficiency, Legitimacy |
+| Auctions | [`simulations/auctions/`](simulations/auctions/) | LLM bidding (T1/T2/CONTROL) |
+| oTree App | [`behavioral_scientist/otree_app/`](behavioral_scientist/otree_app/) | Human experiment interface |
+| Figures & Outputs | [`figures/`](figures/) | Plots, tables, and exports |
+| Documentation | [`docs/report/`](docs/report/) | Final LaTeX report + poster + field trip |
+
+---
+
+## 📁 Repository Map
+
+```plaintext
+.
+├── computational_scientist/
+│   ├── colab/
+│   └── enumeration/
+├── mechanism_design/
+│   ├── src/
+│   └── experiments/
+├── simulations/
+│   └── auctions/
+├── behavioral_scientist/
+│   ├── otree_app/
+│   └── sessions/
+├── figures/
+├── outputs/
+├── poster/
+├── media/
+├── docs/
+│   ├── report/
+│   └── field_trip/
+├── sample.bib
+└── README.md
